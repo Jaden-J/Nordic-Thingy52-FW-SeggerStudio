@@ -5894,7 +5894,7 @@
 #endif
 #if  NFC_HAL_ENABLED
 // <o> NFCT_CONFIG_IRQ_PRIORITY  - Interrupt priority
- 
+
 
 // <i> Priorities 0,2 (nRF51) and 0,1,4,5 (nRF52) are reserved for SoftDevice
 // <0=> 0 (highest) 
