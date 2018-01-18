@@ -1,0 +1,6 @@
+*.DS_Store
+external/sdk13/external/micro-ecc/micro-ecc
+external/nano-pb
+libs/liblibmplmpu_m4_hardfp/liblibmplmpu.a
+libs/libmpllib_Keil_M4FP/libmpllib.lib
+project/pca20020_s132/arm5_no_packs/Output
