@@ -7,3 +7,4 @@ project/pca20020_s132/arm5_no_packs/Output
 project/bootloader_secure/keys
 project/bootloader_secure/dfu_public_key.c
 project/bootloader_secure/pca20020/armgcc/_build
+project/pca20020_s132/armgcc/_build
