@@ -504,7 +504,7 @@ uint32_t drv_speaker_tone_start(uint16_t freq_hz, uint32_t duration_ms, uint8_t 
 
         return NRF_SUCCESS;
     }
-
+\
     NRF_LOG_DEBUG("drv_speaker_tone_start: %dHz - %dms - %d vol\r\n", freq_hz, duration_ms, volume);
 
     period = 1.0f / freq_hz;
