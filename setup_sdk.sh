@@ -3,7 +3,7 @@ rm -rf sdk_components
 ln -s external/sdk13/components sdk_components
 rm -rf external/nano-pb
 ln -s ../external/sdk13/external/nano-pb external/nano-pb
-rm -rf external/segger_rtt
+rm external/segger_rtt
 ln -s ../external/sdk13/external/segger_rtt external/segger_rtt
 
 if ! [ -x "$(command -v git)" ]; then
