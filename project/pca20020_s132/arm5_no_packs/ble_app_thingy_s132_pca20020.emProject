@@ -19,9 +19,10 @@
       project_type="Executable" />
     <folder Name="Internal Files">
       <file file_name="thumb_crt0.s" />
-      <file file_name="ses_nrf52_startup.s" />
       <file file_name="../../../external/sdk13/components/toolchain/system_nrf52.c" />
       <file file_name="ses/flash_placement.xml" />
+      <file file_name="../../../external/sdk13/components/toolchain/ses/ses_nRF_Startup.s" />
+      <file file_name="../../../external/sdk13/components/toolchain/ses/ses_nrf52_Vectors.s" />
     </folder>
     <configuration
       Name="release_v1_0_0"
@@ -67,9 +68,6 @@
       <file file_name="../../../source/drivers/drv_nfc.c" />
     </folder>
     <folder Name="Thingy_libraries">
-      <file file_name="../../../libs/libmpllib_Keil_M4FP/libmpllib.lib">
-        <configuration Name="External Keil" file_type="Library" />
-      </file>
       <file file_name="../../../libs/eMD6/core/driver/eMPL/inv_mpu.c" />
       <file file_name="../../../libs/eMD6/core/driver/eMPL/inv_mpu_dmp_motion_driver.c" />
       <file file_name="../../../libs/eMD6/core/mllite/data_builder.c" />
@@ -83,6 +81,9 @@
       <file file_name="../../../libs/eMD6/core/mllite/storage_manager.c" />
       <file file_name="../../../libs/eMD6/core/eMPL-hal/eMPL_outputs.c" />
       <file file_name="../../../libs/eMD6/core/driver/nRF52/log_nrf52.c" />
+      <file file_name="../../../libs/liblibmplmpu_m4_hardfp/liblibmplmpu.a" />
+      <file file_name="../../../external/sdk13/components/nfc/t2t_lib/nfc_t2t_lib_gcc.a" />
+      <file file_name="../../../external/sdk13/components/toolchain/cmsis/dsp/GCC/libarm_cortexM4lf_math.a" />
     </folder>
     <folder Name="nRF_BLE">
       <file file_name="../../../sdk_components/ble/common/ble_advdata.c" />
@@ -136,9 +137,9 @@
       <file file_name="../../../sdk_components/libraries/strerror/nrf_strerror.c" />
     </folder>
     <folder Name="nRF_Segger_RTT">
-      <file file_name="../../../external/segger_rtt/SEGGER_RTT.c" />
       <file file_name="../../../external/segger_rtt/SEGGER_RTT_printf.c" />
-      <file file_name="ses/sdk_mod/SEGGER_RTT_Syscalls_SES.c" />
+      <file file_name="../../../external/segger_rtt/SEGGER_RTT_Syscalls_SES.c" />
+      <file file_name="../../../external/segger_rtt/SEGGER_RTT.c" />
     </folder>
     <folder Name="Codec: BV32FP">
       <file file_name="../../../libs/bv32fp-1.2/a2lsp.c" />
