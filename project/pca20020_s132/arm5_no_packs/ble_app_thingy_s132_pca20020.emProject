@@ -18,11 +18,9 @@
       project_directory=""
       project_type="Executable" />
     <folder Name="Internal Files">
-      <file file_name="thumb_crt0.s" />
-      <file file_name="../../../external/sdk13/components/toolchain/system_nrf52.c" />
-      <file file_name="ses/flash_placement.xml" />
-      <file file_name="../../../external/sdk13/components/toolchain/ses/ses_nRF_Startup.s" />
-      <file file_name="../../../external/sdk13/components/toolchain/ses/ses_nrf52_Vectors.s" />
+      <file file_name="../../../sdk_mod/thumb_crt0.s" />
+      <file file_name="../../../sdk_mod/ses_nrf52_startup.s" />
+      <file file_name="../../../sdk_mod/flash_placement.xml" />
     </folder>
     <configuration
       Name="release_v1_0_0"
@@ -81,9 +79,9 @@
       <file file_name="../../../libs/eMD6/core/mllite/storage_manager.c" />
       <file file_name="../../../libs/eMD6/core/eMPL-hal/eMPL_outputs.c" />
       <file file_name="../../../libs/eMD6/core/driver/nRF52/log_nrf52.c" />
-      <file file_name="../../../libs/liblibmplmpu_m4_hardfp/liblibmplmpu.a" />
       <file file_name="../../../external/sdk13/components/nfc/t2t_lib/nfc_t2t_lib_gcc.a" />
       <file file_name="../../../external/sdk13/components/toolchain/cmsis/dsp/GCC/libarm_cortexM4lf_math.a" />
+      <file file_name="../../../libs/liblibmplmpu_m4_hardfp/liblibmplmpu.a" />
     </folder>
     <folder Name="nRF_BLE">
       <file file_name="../../../sdk_components/ble/common/ble_advdata.c" />
@@ -217,12 +215,12 @@
       c_user_include_directories="$(PackagesDir)/CMSIS_4/CMSIS/Include;../config;../../../external/sdk13/components/device;../../../external/sdk13_override;../../../external/segger_rtt;../../../include/ble_services;../../../include/board;../../../include/drivers;../../../include/macros;../../../include/modules;../../../include/util;../../../libs/bv32fp-1.2;../../../libs/dvi_adpcm;../../../libs/eMD6/core/driver/eMPL;../../../libs/eMD6/core/driver/include;../../../libs/eMD6/core/driver/nRF52;../../../libs/eMD6/core/eMPL-hal;../../../libs/eMD6/core/mllite;../../../libs/eMD6/core/mpl;../../../libs/sr3_audio;../../../sdk_components/ble/ble_advertising;../../../sdk_components/ble/ble_services/ble_bas;../../../sdk_components/ble/ble_services/ble_dfu;../../../sdk_components/ble/common;../../../sdk_components/drivers_nrf/clock;../../../sdk_components/drivers_nrf/common;../../../sdk_components/drivers_nrf/config;../../../sdk_components/drivers_nrf/delay;../../../sdk_components/drivers_nrf/gpiote;../../../sdk_components/drivers_nrf/hal;../../../sdk_components/drivers_nrf/pdm;../../../sdk_components/drivers_nrf/pwm;../../../sdk_components/drivers_nrf/rng;../../../sdk_components/drivers_nrf/saadc;../../../sdk_components/drivers_nrf/twi_master;../../../sdk_components/drivers_nrf/uart;../../../sdk_components/libraries/bootloader/dfu;../../../sdk_components/libraries/button;../../../sdk_components/libraries/crc32;../../../sdk_components/libraries/experimental_section_vars;../../../sdk_components/libraries/fds;../../../sdk_components/libraries/fifo;../../../sdk_components/libraries/fstorage;../../../sdk_components/libraries/led_softblink;../../../sdk_components/libraries/log;../../../sdk_components/libraries/log/src;../../../sdk_components/libraries/low_power_pwm;../../../sdk_components/libraries/queue;../../../sdk_components/libraries/scheduler;../../../sdk_components/libraries/strerror/;../../../sdk_components/libraries/timer;../../../sdk_components/libraries/trace;../../../sdk_components/libraries/uart;../../../sdk_components/libraries/util;../../../sdk_components/nfc/ndef/generic/message;../../../sdk_components/nfc/ndef/generic/record;../../../sdk_components/nfc/ndef/launchapp;../../../sdk_components/nfc/ndef/text;../../../sdk_components/nfc/ndef/uri;../../../sdk_components/nfc/t2t_lib;../../../sdk_components/nfc/t2t_lib/hal_t2t;../../../sdk_components/softdevice/common/softdevice_handler;../../../sdk_components/softdevice/s132/headers;../../../sdk_components/softdevice/s132/headers/nrf52;../../../sdk_components/toolchain;../../../tools/sound"
       debug_additional_load_file="/Users/andy/Development/Nordic/Nordic-Thingy52-FW/s132_nrf52_4.0.2_softdevice.hex"
       debug_register_definition_file="$(PackagesDir)/nRF/XML/nrf52_Registers.xml"
-      gcc_entry_point="Reset_Handler"
+      gcc_entry_point="reset_handler"
       link_use_linker_script_file="No"
-      linker_memory_map_file="$(PackagesDir)/nRF/XML/nRF52832_xxAA_MemoryMap.xml"
-      linker_output_format="hex"
-      linker_section_placement_file="ses/flash_placement.xml"
-      linker_section_placement_macros="FLASH_START=0x1F000;SRAM_START=0x20004170"
+      linker_memory_map_file=""
+      linker_section_placement_file="../../../sdk_mod/flash_placement.xml"
+      linker_section_placement_macros="FLASH_PH_START=0x0;FLASH_PH_SIZE=0x80000;RAM_PH_START=0x20000000;RAM_PH_SIZE=0x10000;FLASH_START=0x1F000;FLASH_SIZE=0x56000;RAM_START=0x20004170;RAM_SIZE=0xBE90"
+      linker_section_placements_segments="FLASH RX 0x00000000 0x00080000 ;SRAM RWX 0x20000000 0x00010000"
       macros="DeviceHeaderFile=$(PackagesDir)/nRF/CMSIS/Device/Include/nrf.h;DeviceLibraryIdentifier=M4lf;DeviceSystemFile=$(PackagesDir)/nRF/CMSIS/Device/Source/system_nrf52.c;DeviceVectorsFile=$(PackagesDir)/nRF/Source/ses_nrf52_Vectors.s;DeviceFamily=nRF"
       property_groups_file_path="$(PackagesDir)/nRF/XML/property_groups.xml"
       supplyPower="No" />

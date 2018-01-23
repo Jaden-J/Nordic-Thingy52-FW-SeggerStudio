@@ -54,9 +54,10 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="57" y="299" useTextEdit="1" useBinaryEdit="0" left="0" path="../main.c" debugPath="../main.c" selected="0" top="278" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="299" useTextEdit="1" useBinaryEdit="0" left="0" path="../main.c" debugPath="../main.c" selected="0" top="280" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="40" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../source/modules/m_ble.c" debugPath="../../../source/modules/m_ble.c" selected="0" top="9" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="506" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../source/drivers/drv_speaker.c" debugPath="../../../source/drivers/drv_speaker.c" selected="0" top="499" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="506" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../source/drivers/drv_speaker.c" debugPath="../../../source/drivers/drv_speaker.c" selected="0" top="499" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="ble_app_thingy_s132_pca20020.emProject" debugPath="ble_app_thingy_s132_pca20020.emProject" selected="1" top="0" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="ble_app_thingy_s132_pca20020" fileDialogDefaultFilter="*.a" autoConnectTarget="J-Link" buildConfiguration="debug_v1_0_0" debugSearchFileMap="" fileDialogInitialDirectory="/Users/andy/Development/Nordic/Nordic-Thingy52-FW/external/sdk13/components/toolchain/cmsis/dsp/GCC" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <ARMCrossStudioWindow activeProject="ble_app_thingy_s132_pca20020" fileDialogDefaultFilter="*.emProject" autoConnectTarget="J-Link" buildConfiguration="debug_v1_0_0" debugSearchFileMap="" fileDialogInitialDirectory="/Users/andy/Development/Nordic/Nordic-Thingy52-FW2/project/pca20020_s132/arm5_no_packs" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>
